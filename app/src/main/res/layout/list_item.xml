@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_height="match_parent">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/puserimage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:border_color="#FF000000"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Username @Name"
+        android:id="@+id/pusername"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/puserimage" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Postado: 15/01/2016 às 01:11"
+        android:id="@+id/puserdata"
+        android:layout_below="@+id/pusername"
+        android:layout_toRightOf="@+id/puserimage"
+        android:layout_toEndOf="@+id/puserimage" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Olá, este é meu primeiro POST, eu gostaria de avisar eu vou postar muito mais, então tô só ttestando esse layout legal aqui"
+        android:id="@+id/puserpost"
+        android:layout_below="@+id/puserimage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
